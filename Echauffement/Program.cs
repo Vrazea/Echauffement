@@ -25,19 +25,22 @@ class Program
         Console.WriteLine("Combien d'euro as-tu?");
         int euro = Convert.ToInt32(Console.ReadLine());
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
-        Console.WriteLine("Choisis entre ces quatres armes");
+        Console.WriteLine("Choisis entre ces quatres armes ");
         int arme1 = 1;
-        Console.WriteLine("Épée");
+        Console.WriteLine("1 Épée - 25 euros");
         int arme2 = 2;
-        Console.WriteLine("Lance");
+        Console.WriteLine("2 Lance - 35 euros");
         int arme3 = 3;
-        Console.WriteLine("Hallebarde");
+        Console.WriteLine("3 Hallebarde - 45 euros");
         int arme4 = 4;
-        Console.WriteLine("Rapière");
+        Console.WriteLine("4 Rapière - 30 euros");
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
-        int answer = (Convert.ToInt32(Console.ReadLine());
+        int answer = (Convert.ToInt32(Console.ReadLine()));
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
-
+        if(euro <= 25)
+        {
+            Console.WriteLine("Tu n'as pas assez d'argent");
+        }
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
