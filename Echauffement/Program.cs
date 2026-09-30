@@ -9,12 +9,14 @@ class Program
          */
         Console.WriteLine("Bonjour,je m'apelle Matteo j'ai 18 ans et mon jeu préféré est Sea of Thieves");
         // Etape 1 : présentez-vous en écrivant votre prénom et votre jeu préféré
-        Console.WriteLine("Quel est ton nom et ton age ? ");
-        // Etape 2 : demandez à l'utilisateur son prénom et son âge
+        Console.WriteLine("Quel est ton nom");
+        string name ;
+        name = (Console.ReadLine());
+        Console.WriteLine("Quel est ton âge");
         int age = 0;
         age = Convert.ToInt32(Console.ReadLine());
-        if (age >= 18) Console.WriteLine("Tu es majeur");
-        if (age <= 18) Console.WriteLine("Tu es mineur");
+        // Etape 2 : demandez à l'utilisateur son prénom et son âge
+        
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
 
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
