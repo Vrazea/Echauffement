@@ -25,7 +25,15 @@ class Program
         Console.WriteLine("Combien d'euro as-tu?");
         int euro = Convert.ToInt32(Console.ReadLine());
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
-
+        Console.WriteLine("Choisis entre ces quatres armes");
+        String arme1 = ("Lance");
+        Console.WriteLine(arme1);
+        String arme2 = ("Épée");
+        Console.WriteLine(arme2);
+        String arme3 = ("Hallebarde");
+        Console.WriteLine(arme3);
+        String arme4 = ("Rapière");
+        Console.WriteLine(arme4);
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
