@@ -26,16 +26,16 @@ class Program
         int euro = Convert.ToInt32(Console.ReadLine());
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
         Console.WriteLine("Choisis entre ces quatres armes ");
-        int arme1 = 1;
+        int price1 = 25;
         Console.WriteLine("1 Épée - 25 euros");
-        int arme2 = 2;
+        int price2 = 35;
         Console.WriteLine("2 Lance - 35 euros");
-        int arme3 = 3;
+        int price3 = 45;
         Console.WriteLine("3 Hallebarde - 45 euros");
-        int arme4 = 4;
+        int price4 = 30;
         Console.WriteLine("4 Rapière - 30 euros");
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
-        int answer = (Convert.ToInt32(Console.ReadLine()));
+        int answer = Convert.ToInt32(Console.ReadLine());
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
         /*
         if(euro <= 25)
@@ -48,11 +48,31 @@ class Program
         {
             if (euro >= 25)
             {
-                
+                if(answer == 1)
+                {
+                    int a = (euro - price1);
+                    Console.WriteLine(a);
+                }else if(answer == 2)
+                {
+                    int b = (euro - price2);
+                    Console.WriteLine(b);
+                }else if (answer == 3) 
+                {
+                    int c = (euro - price3);
+                    Console.WriteLine(c);
+                }else if (answer == 4)
+                {
+                    int d = (euro - price4);
+                    Console.WriteLine(d);
+                }
+                else
+                {
+                    Console.WriteLine("L'achat n'as pas pu être effectué");
+                }
             }
         }
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
-        // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
+        // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée
         // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
 
         /*
